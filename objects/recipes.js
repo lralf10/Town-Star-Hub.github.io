@@ -4448,6 +4448,24 @@ const recipes = {
         "Value4": 1,
         "FileUrl": "images/recipes/Starlight_Market_Box/icon_Starlight_Market_Box.png"
     },
+    "Vanilla_Bean": {
+        "CityPoints": 2,
+        "CityPrice": 200,
+        "Class": "Crop",
+        "ProximityBonus": "Water",
+        "ProximityPenalty": "Cold,Dirty,Salty",
+        "Req1": "Water",
+        "Req2": "none",
+        "Req3": "none",
+        "Time0": 300,
+        "Time1": 600,
+        "Time2": 1200,
+        "Time3": 2400,
+        "Value1": 3,
+        "Value2": 0,
+        "Value3": 0,
+        "FileUrl": "images/recipes/Vanilla_Bean/icon_Vanilla_Bean.png"
+    },
     "Wine_Case": {
         "CityPoints": 5428,
         "CityPrice": 211480,
