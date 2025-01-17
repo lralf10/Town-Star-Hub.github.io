@@ -2440,6 +2440,28 @@ const recipes = {
         "Value4": 1,
         "Value5": 2,
         "FileUrl": "images/recipes/Kimchi/icon_Kimchi.png"
+    },    
+    "Kimchi_Soup": {
+        "CityPoints": 518,
+        "CityPrice": 22460,
+        "Class": "Fishing",
+        "ProximityBonus": "None",
+        "ProximityPenalty": "None",
+        "ProximityReverse": false,
+        "Req1": "Kimchi",
+        "Req2": "Tofu",
+        "Req3": "Seaweed",
+        "Req4": "Shrimp",
+        "Req5": "Water",
+        "Time0": 220,
+        "Time1": 440,
+        "Time2": 880,
+        "Time3": 1760,
+        "Value1": 2,
+        "Value2": 3,
+        "Value3": 5,
+        "Value4": 5,
+        "Value5": 3
     },
     "Lasagna": {
         "CityPoints": 25000,
@@ -3718,6 +3740,24 @@ const recipes = {
         "Value5": 1,
         "FileUrl": "images/recipes/Snowglobe/icon_Snowglobe.png"
     },
+    "Soybean": {
+        "CityPoints": 1,
+        "CityPrice": 400,
+        "Class": "Crop",
+        "ProximityBonus": "Water",
+        "ProximityPenalty": "Dirty,Salty,Shady",
+        "ProximityReverse": false,
+        "Req1": "Water",
+        "Req2": "none",
+        "Req3": "none",
+        "Time0": 40,
+        "Time1": 80,
+        "Time2": 160,
+        "Time3": 320,
+        "Value1": 5,
+        "Value2": 0,
+        "Value3": 0
+    },
     "Stack_Box": {
         "CityPoints": 79750,
         "CityPrice": 2500000,
@@ -3990,6 +4030,24 @@ const recipes = {
         "Value2": 3,
         "Value3": 1,
         "FileUrl": "images/recipes/Trick-or-Treat_Bag/icon_Trick-or-Treat_Bag.png"
+    },
+    "Tofu": {
+        "CityPoints": 518,
+        "CityPrice": 22460,
+        "Class": "Fishing",
+        "ProximityBonus": "None",
+        "ProximityPenalty": "None",
+        "ProximityReverse": false,
+        "Req1": "Soybean",
+        "Req2": "Rice_Vinegar",
+        "Req3": "Water",
+        "Time0": 180,
+        "Time1": 360,
+        "Time2": 720,
+        "Time3": 1440,
+        "Value1": 8,
+        "Value2": 1,
+        "Value3": 6
     },
     "Tomato": {
         "CityPoints": 1,
