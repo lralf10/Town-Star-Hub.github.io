@@ -2,15 +2,15 @@
 
 Welcome to visualizer website repository. The Code for the visualizer will not evolve, it will remain frozen at current stage. Current repository contains all working files needed to run the website. This repository allows for maintaining the game data (with mechanics implementation that was already covered in the past).
 
-This is meant to be a community based repository, anyone can join and is welcome to contribute. We have a discord channel, please contact Stan to get obtain the write access to this repository.
+This is meant to be a community based repository, anyone can join and is welcome to contribute. We have a discord channel, please contact Stan to get write access to this repository.
 
-Please note, the code is compiled there will be no collaboration on evolving the code (no feature implementation), the collaboration is about updating game data (images, recipes, crafts, buildings, new nfts). This also means no coding skills are required, just a limited experience with editing json files, the git related operations can be mastered very easily for what this maintenance requires.
+Please note, the code is compiled, there will be no collaboration on evolving the code (no feature implementation), the current collaboration is about updating game data (images, recipes, crafts, buildings, new nfts). This also means no coding skills are required, just a limited experience with editing json files, the git related operations can be mastered very easily for what this maintenance requires.
 
 # Recommended Setup
 
 We highly recommend to use Visual Studio as IDE for editing this repository.
 
-Install `Live Server` extension by Riwick Dey. This adds adds a button on bottom taskbar on right corner with `Go Live` that allows to open the website on local computer and see the made changes before pushing to git.
+Install `Live Server` extension by Riwick Dey. This adds adds a button on bottom taskbar on right corner with `Go Live` that allows to open the website on local computer and see the changes made before pushing to git.
 
 Optionally, install `Office Viewer(Mardown Editor` by Weijan Chen. This allows to read/edit markdown pages (like this page) in a more Word like interface.
 
@@ -35,7 +35,7 @@ this.fileUrl = '/images/recipes/' + craftName + '/icon_' + craftName + '.png';
 this.fileUrl ='/images/townstarobjects/' + place.Name + '/icon_' + place.Name + '.png';
 ```
 
-You only need to respect this exact path-ing and naming of images and the visualizer will load correctly the associated image. When in doubt, open the dev tools and inspect the missing image, look at the expected image path in inspector, compare it to uploaded image.
+You only need to respect this exact path-ing and naming of images and the visualizer will load correctly the associated image. When in doubt, open the dev tools and inspect the missing image, look at the expected image path in inspector, compare it to uploaded image location and naming.
 
 #### Size of Building
 
@@ -50,7 +50,7 @@ Note: both are needed. If you omit one of those, it will be set to default (and 
 
 #### Building Costs
 
-Bellow is an example of building costs information. Note that Material and Amount must be numbered (1, 2, 3...), up to 10 Materials / Amounts are being expected by the code (to cover eventual fails of Gala for overloading building requirements). Name of materials (crafts) must match existing items (otherwise grouping overall materials needed for the build will not count correctly).
+Bellow is an example of building costs information. Note that Material and Amount must be numbered (1, 2, 3...), up to 10 Materials / Amounts are covered by the code (to accomodate eventual fails of Gala for overloading building requirements). Name of materials (crafts) must match existing items (otherwise grouping overall materials needed for the build will not count correctly).
 
 ```javascript
 // how much it cost to build in cash
@@ -69,7 +69,7 @@ Bellow is an example of building costs information. Note that Material and Amoun
 
 #### Basic Neighbor effects.
 
-Here is a simplistic approach of defining effects distribution as seen in Legacy game code (except the Step property). Note, we took the old objects and thus got stuck with old mechanics and the way these were encoded in properties in old objects.
+Here is a simplistic approach of defining effects distribution as seen in Legacy game code (except the Step property). Note, we took the old objects and thus got stuck with old mechanics and the way these were encoded in properties.
 
 how this works: `ProximityDist` (here at 1) will define how far away the effect would reach (the radius), We start from exterior of that radius with effect of Zero, then go towards center and add 1 to each step (thus always incrementing the values towards the center). We added an additional property called  `ProximityEmitStep` to allow incrementing by another value then default 1. Thus, for `Rare Water Pump` we obtain 3 `Water Drum` at a distance of 1 (neighboring cells).
 
@@ -90,9 +90,9 @@ Note: uniform distribution of effects at a set X value for a given Y distance is
 
 #### Crafts
 
-Please note, current data structure requires that you use Recipe Name and not the Recipe Output. For example, Green Forges Craft `Green_Gold` (=Recipe), while the recipe of `Green_Gold` will output `Gold` as storable item (the `Name` property in recipe).
+Please note, current data structure requires that you use Recipe Name and not the Recipe Output. For example, Green Forges craft `Green_Gold` (=Recipe), while the recipe of `Green_Gold` will output `Gold` as storable item (the `Name` property in recipe).
 
-The property need updating each time a new recipe is added to that building. The recipe must exist in the Recipes object.
+The property needs updating each time a new recipe is added to that building, no space is allowed in the property (will fail to math the recipes later). The recipe must exist in the Recipes object.
 
 Note: since a lot of nfts extend in-game objects, you'll need to manually add the recipe (or create a new recipe if nft facilitates the crafting) to all those nfts (ex: think of Table of Appreciation)
 
@@ -104,13 +104,13 @@ Note: since a lot of nfts extend in-game objects, you'll need to manually add th
 
 The property `EdgeRequirements` allows defining if placeable building need special neighbors to work, or `None` otherwise.
 
-The values are:
+Herea are some of values:
 
-| value                                                        | description                                                                                       |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| `Road`                                                     | Any type of road (dust or paved)                                                                  |
-| `Paved_Road`                                               | Paved Road required                                                                               |
-| `Paved_Road:AND:OpenWorld`                                 | Paved Road (inside the grid) and open edge (not mountains, not ocean, not river)                  |
+| value                                                        | description                                                                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `Road`                                                     | Any type of road (dust or paved)                                                                 |
+| `Paved_Road`                                               | Paved Road required                                                                              |
+| `Paved_Road:AND:OpenWorld`                                 | Paved Road (inside the grid) and open edge (not mountains, not ocean, not river)                 |
 | `Place_A:AND:Place_B` (ex: `Paved_Road:AND:Water_Pump` ) | AND connects concepts (terrain, buildings, edges), at least one neighbor of each must be present |
 | `Pond:OR:Waterway`                                         | OR switches concepts (terrain, buildings, edges), Any of those must match as neighbor            |
 
