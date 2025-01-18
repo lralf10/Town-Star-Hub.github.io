@@ -6405,6 +6405,20 @@ const townstarObjects = {
         "ProximityImmune": false,
         "FileUrl": "images/townstarobjects/Valentines_Stand/icon_Valentines_Stand.png"
     },
+    "Vanilla_Bean_Field": {
+        "BuildCost": 1250,
+        "Class": "Farm",
+        "CraftReqsMet": false,
+        "CraftTimeMod": 1,
+        "Crafts": "Vanilla_Bean",
+        "EdgeRequirements": "None",
+        "LaborCost": 0,
+        "Name": "Vanilla_Bean_Field",
+        "ProximityDist": 0,
+        "ProximityEmit": "None",
+        "ProximityImmune": false,
+        "FileUrl": "images/townstarobjects/Vanilla_Bean_Field/icon_Vanilla_Bean_Field.png"
+    },
     "VOX_Home": {
         "BuildCost": 0,
         "Class": "BlockChain",
