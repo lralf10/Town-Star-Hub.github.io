@@ -1785,6 +1785,20 @@ const townstarObjects = {
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Epic_Grape_Storage/icon_Epic_Grape_Storage.png"
   },
+  "Epic_Husk_Rice_Stand": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 0,
+    "Crafts": "None",
+    "EdgeRequirements": "None",
+    "LaborCost": 0,
+    "Name": "Epic_Husk_Rice_Stand",
+    "ProximityDist": 4,
+    "ProximityEmit": "Husk_Rice",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Epic_Husk_Rice_Stand/icon_Epic_Husk_Rice_Stand.png"
+  },
   "Epic_Master_Wizard": {
     "BuildCost": 0,
     "Class": "BlockChain",
@@ -3027,6 +3041,20 @@ const townstarObjects = {
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Legendary_Grape_Storage/icon_Legendary_Grape_Storage.png"
   },
+  "Legendary_Husk_Rice_Stand": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 0,
+    "Crafts": "None",
+    "EdgeRequirements": "None",
+    "LaborCost": 0,
+    "Name": "Legendary_Husk_Rice_Stand",
+    "ProximityDist": 5,
+    "ProximityEmit": "Husk_Rice",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Legendary_Husk_Rice_Stand/icon_Legendary_Husk_Rice_Stand.png"
+  },
   "Legendary_Leprechaun_s_Pot_o_Gold": {
     "label": "Leprechaun's Pot O' Gold",
     "Name": "Legendary_Leprechaun_s_Pot_o_Gold",
@@ -4067,11 +4095,12 @@ const townstarObjects = {
     "Class": "BlockChain",
     "CraftReqsMet": false,
     "CraftTimeMod": 1,
-    "Crafts": "None",
+    "Crafts": "Water,Water_Drum",
     "EdgeRequirements": "None",
     "LaborCost": 0,
     "Name": "Phantom_Ship",
-    "ProximityDist": 2,
+    "ProximityDist": 5,
+    "ProximitiStep": 0,
     "ProximityEmit": "Water",
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Pilgrim_Turkey_Statue/icon_Phantom_Ship.png"    
@@ -4590,6 +4619,20 @@ const townstarObjects = {
     "ProximityEmit": "Dirty,Shady",
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Rare_Green_Forge/icon_Rare_Green_Forge.png"
+  },
+  "Rare_Husk_Rice_Stand": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 0,
+    "Crafts": "None",
+    "EdgeRequirements": "Road",
+    "LaborCost": 0,
+    "Name": "Rare_Husk_Rice_Stand",
+    "ProximityDist": 3,    
+    "ProximityEmit": "Husk_Rice",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Rare_Husk_Rice_Stand/icon_Rare_Husk_Rice_Stand.png"
   },
   "Rare_Husk_Rice_Storage": {
     "BuildCost": 0,
@@ -6264,6 +6307,20 @@ const townstarObjects = {
     "ProximityEmit": "Shady",
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Uncommon_Husk_Rice_Storage/icon_Uncommon_Husk_Rice_Storage.png"
+  },
+  "Uncommon_Husk_Rice_Stand": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 0,
+    "Crafts": "None",
+    "EdgeRequirements": "None",
+    "LaborCost": 0,
+    "Name": "Uncommon_Husk_Rice_Stand",
+    "ProximityDist": 2,    
+    "ProximityEmit": "Husk_Rice",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Uncommon_Husk_Rice_Stand/icon_Uncommon_Husk_Rice_Stand.png"
   },
   "Uncommon_Jewelry_Storage": {
     "BuildCost": 0,
