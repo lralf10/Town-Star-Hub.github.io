@@ -3041,6 +3041,26 @@ const recipes = {
         "Value3": 0,
         "FileUrl": "images/recipes/Peppermint/icon_Peppermint.png"
     },
+    "Peppermint_Hot_Cocoa": {
+        "CityPoints": 913,
+        "CityPrice": 50212,
+        "Class": "Crafted",
+        "Name": "Peppermint_Hot_Cocoa",
+        "ProximityBonus": "none",
+        "ProximityPenalty": "None",
+        "ProximityReverse": false,
+        "Req1": "Hot_Cocoa",
+        "Req2": "Peppermint",
+        "Req3": "none",
+        "Time0": 140,
+        "Time1": 280,
+        "Time2": 560,
+        "Time3": 1120,
+        "Value1": 1,
+        "Value2": 2,
+        "Value3": 0,
+        "FileUrl": "images/recipes/Peppermint/icon_Peppermint.png"
+    },
     "Petroleum": {
         "CityPoints": 4,
         "CityPrice": 450,

@@ -657,7 +657,7 @@ const townstarObjects = {
     "Class": "Farm",
     "CraftReqsMet": false,
     "CraftTimeMod": 1,
-    "Crafts": "Cup_of_Coffee,Brewing_Hot_Cocoa,Mocha_Coffee,Salmon_Panini",
+    "Crafts": "Cup_of_Coffee,Brewing_Hot_Cocoa,Mocha_Coffee,Salmon_Panini,Peppermint_Hot_Cocoa",
     "EdgeRequirements": "Road",
     "LaborCost": 0,
     "Name": "Cafe",
