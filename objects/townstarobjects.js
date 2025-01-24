@@ -3308,6 +3308,20 @@ const townstarObjects = {
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Light_Circus/icon_Light_Circus.png"
   },
+  "Lettuce_Storage_Rare": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 0,
+    "Crafts": "None",
+    "EdgeRequirements": "Road",
+    "LaborCost": 0,
+    "Name": "Lettuce_Storage_Rare",
+    "ProximityDist": 1,
+    "ProximityEmit": "Shady",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Lettuce_Storage_Rare/icon_Lettuce_Storage_Rare.png"
+  },
   "Lolli_and_Pop_Shop": {
     "BuildCost": 0,
     "Class": "BlockChain",
