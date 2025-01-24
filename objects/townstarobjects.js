@@ -2367,6 +2367,22 @@ const townstarObjects = {
     "Ammount3": 0,
     "Ammount4": 0
   },
+  "Fundamentals_Storage": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 1,
+    "Crafts": "None",
+    "EdgeRequirements": "RRoad",
+    "LaborCost": 0,
+    "Name": "Fundamentals_Storage",
+    "ProximityDist": 0,
+    "ProximityEmit": "None",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Fundamentals_Storage/icon_Fundamentals_Storage.png",
+    "SizeX": 2,
+    "SizeY": 2
+  },
   "Gala_Turntable": {
     "BuildCost": 0,
     "Class": "BlockChain",
