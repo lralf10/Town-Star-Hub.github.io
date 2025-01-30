@@ -696,6 +696,26 @@ const recipes = {
         "Value4": 2,
         "FileUrl": "images/recipes/Candy_Corn/icon_Candy_Corn.png"
     },
+    "Canvas": {
+        "CityPoints": 10,
+        "CityPrice": 10,
+        "Class": "Crafted",
+        "ProximityBonus": "none",
+        "ProximityPenalty": "None",
+        "ProximityReverse": false,
+        "Req1": "Wood",
+        "Req2": "Glue",
+        "Req3": "Cotton",
+        "Time0": 90,
+        "Time1": 180,
+        "Time2": 360,
+        "Time3": 720,
+        "Value1": 10,
+        "Value2": 1,
+        "Value3": 10,
+        "FileUrl": "images/recipes/Canvas/icon_Canvas.png"
+    },
+
     "Cash": {
         "CityPoints": 0,
         "CityPrice": 0,
@@ -4445,6 +4465,29 @@ const recipes = {
         "Value4": 1,
         "Value5": 1,
         "FileUrl": "images/recipes/Starlight_Market_Box/icon_Starlight_Market_Box.png"
+    },
+    "Starlight_Market_Box_02": {
+        "CityPoints": 60000,
+        "CityPrice": 250000,
+        "Class": "Crafted",
+        "ProximityBonus": "None",
+        "ProximityPenalty": "None",
+        "ProximityReverse": false,
+        "Req1": "Red_Paint",
+        "Req2": "Yellow_Paint",
+        "Req3": "Blue_Paint",
+        "Req4": "Canvas",
+        "Req5": "Wooden_Box",
+        "Time0": 60,
+        "Time1": 60,
+        "Time2": 60,
+        "Time3": 60,
+        "Value1": 1,
+        "Value2": 1,
+        "Value3": 1,
+        "Value4": 1,
+        "Value5": 1,
+        "FileUrl": "images/recipes/Starlight_Market_Box_02/icon_Starlight_Market_Box_02.png"
     },
     "Starlight_Market_Box_No_Box": {
         "CityPoints": 8448,
