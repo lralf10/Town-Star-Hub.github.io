@@ -4650,6 +4650,20 @@ const townstarObjects = {
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Rare_Green_Forge/icon_Rare_Green_Forge.png"
   },
+  "Rare_Honey_Storage": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 0,
+    "Crafts": "None",
+    "EdgeRequirements": "Road",
+    "LaborCost": 0,
+    "Name": "Rare_Honey_Storage",
+    "ProximityDist": 1,
+    "ProximityEmit": "Shady",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Rare_Honey_Storage/icon_Rare_Honey_Storage.png"
+  },
   "Rare_Husk_Rice_Stand": {
     "BuildCost": 0,
     "Class": "BlockChain",
@@ -4777,6 +4791,20 @@ const townstarObjects = {
     "ProximityEmit": "Shady,Cold",
     "ProximityImmune": false,
     "FileUrl": "images/townstarobjects/Rare_North_Pole_Creation_Lab/icon_Rare_North_Pole_Creation_Lab.png"
+  },
+  "Rare_Paint_Storage": {
+    "BuildCost": 0,
+    "Class": "BlockChain",
+    "CraftReqsMet": false,
+    "CraftTimeMod": 0,
+    "Crafts": "None",
+    "EdgeRequirements": "Road",
+    "LaborCost": 0,
+    "Name": "Rare_Paint_Storage",
+    "ProximityDist": 1,
+    "ProximityEmit": "Shady",
+    "ProximityImmune": false,
+    "FileUrl": "images/townstarobjects/Rare_Paint_Storage/icon_Rare_Paint_Storage.png"
   },
   "Rare_Pottery_Shop": {
     "BuildCost": 0,
